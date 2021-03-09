@@ -7,7 +7,7 @@
         },
         "item": [
             {
-                "name": "Get Articles",
+                "name": "Get Articles from mockapi",
                 "event": [
                     {
                         "listen": "test",
