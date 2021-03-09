@@ -1,4 +1,4 @@
-{
+i{
     "collection": {
         "info": {
             "_postman_id": "9ad7955f-e4e3-40b7-9819-3d74cc22f662",
@@ -40,6 +40,45 @@
                         ],
                         "path": [
                             "articles"
+                        ]
+                    }
+                },
+                "response": []
+            },
+            {
+                "name": "Get Single Article",
+                "event": [
+                    {
+                        "listen": "test",
+                        "script": {
+                            "id": "3eabdf0d-8626-4e0d-8ba9-16d84ebe6e3c",
+                            "exec": [
+                                "pm.test(\"Response time is less than 200ms\", function () {",
+                                "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                                "});"
+                            ],
+                            "type": "text/javascript"
+                        }
+                    }
+                ],
+                "id": "1b981690-593b-49f1-8620-4fe0fcf69a19",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                        "raw": "https://6047a4d1b801a40017ccca5a.mockapi.io/articles/1",
+                        "protocol": "https",
+                        "host": [
+                            "6047a4d1b801a40017ccca5a",
+                            "mockapi",
+                            "io"
+                        ],
+                        "path": [
+                            "articles",
+                            "1"
                         ]
                     }
                 },
